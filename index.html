@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- 
+What are you doing here?! you sneaky developer...
+-->
+
+<head>
+  <!--<script async src="https://www.googletagmanager.com/gtag/js?id=G-YMWDE0VTD3"></script>-->
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+
+    gtag("config", "G-YMWDE0VTD3");
+  </script>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="index, follow" />
+  <meta name="theme-color" content="#000" />
+  <meta name="description"
+    content="akinokoika" />
+  <meta name="keywords"
+    content="akinokoika" />
+  <meta name="author" content="akinokoika" />
+  <meta property="og:image" content="https://www.akinokoika.site/src/png/Preview-card-min.png" />
+  <meta property="og:title" content="akinokoika" />
+  <meta property="og:description"
+    content="Hi! My name is akinokoika." />
+
+  <meta property="og:url" content="https://akinokoika.site" />
+  <meta property="og:site_name" content="akinokoika" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:site" content="@akinokoika" />
+  <meta name="twitter:title" content="akinokoika" />
+  <meta name="twitter:description"
+  content="Hi! My name is akinokoika." />
+  <meta name="twitter:image" content="https://www.akinokoika.site/src/png/Preview-card-min.png" />
+  <title>akinokoika</title>
+  <link rel="icon" type="image/x-icon" href="src/png/main-favicon.png" />
+  <!-- aos cdn -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <!-- stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+  <!-- google fonts-->
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Passions+Conflict&family=Orbitron&family=Fira+Code&family=Six+Caps" />
+
+<body class="body">
+  <audio loop="" id="audioPlayer" style="display: none">
+    <source src="src/mp3/preloader.mp3" type="audio/mp3" />
+  </audio>
+  <div id="preloader"></div>
+  <noscript>Allow Javascript</noscript>
+
+  <header>
+    <div class="cursor-inner" id="cursor-inner"></div>
+    <div class="cursor-outer" id="cursor-outer"></div>
+
+    <div class="navbar" id="navbar">
+      <div class="hey">你好!</div>
+      <div class="logo" tabindex="0" aria-label="vinod jangid logo">
+        <div class="logo-top">
+          <img src="src/png/IMG_20241112_161508.png" alt="animation-head" id="nav-avatar"/>
+        </div>
+      </div>
+      <div class="navbar-tabs" id="navbar-tabs">
+        <ul class="navbar-tabs-ul">
+          <li class="home activeThistab" class="navbar-tabs-li" data-aos="fade-down" data-aos-delay="100">
+            <a href="#home" tabindex="0" aria-label="Home menu button">
+              &#60;主页&#62;
+            </a>
+          </li>
+
+          
+
+          <li class="skills" class="navbar-tabs-li" data-aos="fade-down" data-aos-delay="500">
+            <a href="#skills" aria-label="skills menu button">
+              &#60;技能&#62;
+            </a>
+          </li>
+
+          <li class="projects" class="navbar-tabs-li" data-aos="fade-down" data-aos-delay="700">
+            <a href="#projects" aria-label="projects menu button">
+              &#60;项目&#62;
+            </a>
+          </li>
+          
+          <li class="about" class="navbar-tabs-li" data-aos="fade-down" data-aos-delay="300">
+  <a href="#about" aria-label="about menu button">
+    &#60;结尾&#62;
+  </a>
+</li>
+        </ul>
+      </div>
+      <!-- navbar tabs ends -->
+      
+    </div>
+  </header>
+  <!-- header ends here -->
+
+  <main>
+    <!-- hamburger -->
+    <div class="hamburger" id="hamburger" data-aos="fade">
+      <div class="hamburgerbase">
+        <button id="hamburger-button" onclick="hamburgerMenu()" tabindex="0" aria-label="Menu Button">
+          <span class="burger-bar" id="burger-bar1"></span>
+          <span class="burger-bar" id="burger-bar2"></span>
+          <span class="burger-bar" id="burger-bar3"></span>
+        </button>
+      </div>
+    </div>
+    <!-- hamburger -->
+    <div class="mobiletogglemenu" id="mobiletogglemenu">
+      <ul class="mobile-navbar-tabs-ul" id="mobile-ul">
+        <li id="home-mobile-tab" class="mobile-navbar-tabs-li home activeThismobiletab" onclick="hidemenubyli()">
+          <a href="#home" tabindex="0" aria-label="Home menu button">
+            &#60;主页&#62;
+          </a>
+        </li>
+
+       
+        <li id="skills-mobile-tab" class="mobile-navbar-tabs-li skills" onclick="hidemenubyli()">
+          <a href="#skills" tabindex="0" aria-label="skills menu button">
+            &#60;技能&#62;
+          </a>
+        </li>
+        <li id="projects-mobile-tab" class="mobile-navbar-tabs-li projects" onclick="hidemenubyli()">
+          <a href="#projects" tabindex="0" aria-label="projects menu button">
+            &#60;项目&#62;
+          </a>
+        </li>
+         <li id="aboutme-mobile-tab" class="mobile-navbar-tabs-li about" onclick="hidemenubyli()">
+   <a href="#about" tabindex="0" aria-label="about menu button">
+     &#60;结尾&#62;
+   </a>
+ </li>
+      </ul>
+    </div>
+    <!-- mobile toggle menu ends -->
+
+    <section class="landing-page-container" id="home">
+      <div class="blob"></div>
+
+      <div class="text-content">
+        <article id="hello-friend" data-aos="fade-up" data-aos-delay="0">
+          <p class="jello">你</p>
+          <p class="jello">好</p>
+          <p class="jello">,</p>
+          &nbsp;
+          <p class="jello">本</p>
+          <p class="jello">人</p>
+          <p class="jello">是</p>
+        </article>
+        <article id="name" data-aos="fade-up" data-aos-delay="200">
+          <p class="jello">赵</p>
+          &nbsp;
+          <p class="jello">鑫</p>
+          &nbsp;
+          <p class="jello">华</p>
+          &nbsp;
+        </article>
+
+        <article id="work" data-aos="fade-up" data-aos-delay="400">
+          <div>
+            <p class="jello">是</p>
+          </div>
+          <div>
+            <p class="jello"></p>
+            <p class="jello"></p>
+            <p class="jello">前</p>
+            <p class="jello">端</p>
+            <p class="jello">开</p>
+            <p class="jello">发</p>
+          </div>
+          <div>
+            <p class="jello">&</p>
+          </div>
+          <div>
+            <p class="jello">五</p>
+            <p class="jello">邑</p>
+            <p class="jello">大</p>
+            <p class="jello">学</p>
+          </div>
+          <div>
+            <p class="jello">的</p>
+            <p class="jello">一</p>
+            <p class="jello">名</p>
+            <p class="jello">学</p>
+            <p class="jello">生</p>
+          </div>
+          <div>
+          </div>
+        </article>
+        <p id="info-para" data-aos="fade-up" data-aos-delay="600">
+          本人熟悉计算机网络及其算法知识，熟练掌握web开发和js语言，具有独立架设网站和服务器，部署后端数据库，并设计编程前端页面并上线运行的经验，了解和使用Vue以及各类UI框架，对前端可视化技术有一定理解，经常阅读外网英文开发文档，Github上有数个开源项目，获得10+的star。<br />
+          <br />
+          获奖经历：软考中级证书，蓝桥杯省二，信工学院编程大赛优秀奖，英语六级，日语N1
+          <br />
+          <br />
+          十分期待与您的联系!
+        </p>
+        <div class="contact-btn-div" data-aos="fade-up" data-aos-delay="800">
+          
+          <a href="javascript:void(0);" onclick="showToast()" tabindex="-1">
+
+  <!-- Toast 消息 -->
+  <div id="toast" class="toast"></div>
+
+          <script>
+    // 动态添加Toast样式
+          const style = document.createElement('style');
+style.innerHTML = `
+            
+/* Toast样式 */
+.toast {
+    visibility: hidden;
+    min-width: 300px;
+    margin-left: -150px;
+    background: linear-gradient(to right, #6a0dad, #1e3c72); /* 渐变背景：从深紫色到蓝色 */
+    color: #fff; /* 文字为白色 */
+    text-align: center;
+    border-radius: 5px;
+    padding: 15px;
+    position: fixed;
+    z-index: 1;
+    left: 50%;
+    bottom: 30px; /* 显示位置在页面底部 */
+    font-size: 18px; /* 增大字体 */
+    opacity: 0;
+    transition: opacity 0.5s, bottom 0.5s ease-in-out;
+}
+
+.toast.show {
+    visibility: visible;
+    opacity: 1;
+    bottom: 50px; /* 显示后位置稍微上移 */
+}
+
+        `;
+          document.head.appendChild(style);
+          
+          // 显示Toast消息
+          function showToast() {
+            // 创建一个新的Toast元素
+            const toast = document.createElement("div");
+            toast.className = "toast";
+            toast.textContent = "联系电话：13288756040";
+          
+            // 添加到body中
+            document.body.appendChild(toast);
+          
+            // 显示Toast
+            setTimeout(() => {
+              toast.className = "toast show"; // 显示消息
+            }, 10); // 延迟显示，确保样式生效
+          
+            // 设置3秒后隐藏Toast
+            setTimeout(() => {
+              toast.className = toast.className.replace("show", ""); // 隐藏消息
+              // 3秒后移除Toast元素
+              setTimeout(() => {
+                document.body.removeChild(toast);
+              }, 500); // 在动画结束后移除元素
+            }, 3000); // 3秒后隐藏
+          }
+  </script>
+
+            
+            <button class="letsTalkBtn">
+              <p class="letsTalkBtn-text">联系</p>
+              <span class="letsTalkBtn-BG"></span>
+            </button></a>
+          <div class="setting-container" id="setting-container">
+            <input type="checkbox" id="switchforsetting" onclick="settingtoggle()" />
+
+            <label for="switchforsetting" class="needtobeinvert" id="labelforsetting" tabindex="0"
+              aria-label="settings for sound and appearance"></label>
+
+            <div class="visualmodetogglebuttoncontainer" id="visualmodetogglebuttoncontainer">
+              <input type="checkbox" id="switchforvisualmode" onclick="visualmode()" />
+              <label for="switchforvisualmode" id="labelforvisualmode" tabindex="0"
+                aria-label="switch appearance"></label>
+            </div>
+
+            <div class="soundtogglebuttoncontainer" id="soundtogglebuttoncontainer">
+              <input type="checkbox" id="switchforsound" onclick="playpause()" />
+              <label for="switchforsound" id="labelforsound" tabindex="0" aria-label="switch sound"
+                class="needtobeinvert"></label>
+            </div>
+          </div>
+          <!-- setting div ends -->
+        </div>
+        <!-- contact-btn-div -->
+        
+        <div class="social-media-container">
+          <div class="getintouch-heading">
+            <article><br /><br />hello word();</article>
+          </div>
+          <div class="logos">
+            
+
+            <a href="https://github.com/akinokoika" target="_blank" aria-label="My github"><svg viewBox="0 0 496 512"
+                class="SocialHandle">
+                <path
+                  d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z" />
+              </svg></a>
+
+            
+          </div>
+        </div>
+      </div>
+     
+     
+     
+    </section>
+
+
+    <section class="skills-section-container" id="skills">
+      <div class="skills-section">
+        <div class="section-heading" data-aos="fade-up">
+          <h2 class="section-heading-article" tabindex="0" aria-label="skills heading">
+            &#60;技能&#62;
+          </h2>
+          <p class="sectionHeadingP"></p>
+        </div>
+
+        <div class="frontend-dev-section">
+          <h3 class="frontend-dev-heading" data-aos="fade-up" tabindex="0"
+            aria-label="As a frontend a developer these are the skills i have">
+            技术栈
+          </h3>
+          <ul class="tech-stack-wrapper">
+            <li class="tech-stack-box" data-aos="fade-up">
+              <img src="./src/png/htmllogo.png" alt="Html skill" class="tech-stack-logo" />
+              <span class="tooltip">HTML</span>
+            </li>
+
+            <li class="tech-stack-box" data-aos="fade-up">
+              <img src="./src/png/csslogo.png" alt="css skill" class="tech-stack-logo" />
+              <span class="tooltip">CSS</span>
+            </li>
+
+            <li class="tech-stack-box" data-aos="fade-up">
+              <img src="./src/png/jslogo.png" alt="js skill" class="tech-stack-logo" />
+              <span class="tooltip">JS</span>
+            </li>
+
+            <li class="tech-stack-box" data-aos="fade-up">
+              <img src="./src/png/Vue.js.png" alt="react skill" class="tech-stack-logo" />
+              <span class="tooltip">Vue</span>
+            </li>
+            
+            <li class="tech-stack-box" data-aos="fade-up">
+              <img src="./src/png/mdui.png" alt="figma skill" class="tech-stack-logo" />
+              <span class="tooltip">Mdui</span>
+            </li>
+            
+            <li class="tech-stack-box" data-aos="fade-up">
+               <img src="./src/png/Node.js.png" alt="bootstrap skill" class="tech-stack-logo" />
+              <span class="tooltip">Node.js</span>
+            </li>
+
+            <li class="tech-stack-box" data-aos="fade-up">
+              <img src="./src/png/jQuery.png" alt="github skill" class="tech-stack-logo needtobeinvert" />
+              <span class="tooltip">jQuery</span>
+            </li>
+            
+            <li class="tech-stack-box" data-aos="fade-up">
+              <img src="./src/png/Three.js.png" alt="git skill" class="tech-stack-logo" />
+              <span class="tooltip">Three.js</span>
+            </li>
+
+            <li class="tech-stack-box" data-aos="fade-up">
+              <img src="./src/png/gitlogo.png" alt="git skill" class="tech-stack-logo" />
+              <span class="tooltip">GIT</span>
+            </li>
+
+            <li class="tech-stack-box" data-aos="fade-up">
+              <img src="./src/png/Linux.png" alt="c language skill" class="tech-stack-logo" />
+              <span class="tooltip">Linux</span>
+            </li>
+
+            <li class="tech-stack-box" data-aos="fade-up">
+              <img src="./src/png/cpplogo.png" alt="c++ language skill" class="tech-stack-logo" />
+              <span class="tooltip">C++</span>
+            </li>
+
+            <li class="tech-stack-box" data-aos="fade-up">
+              <img src="./src/png/PHP.png" alt="photoshop skill" class="tech-stack-logo" />
+              <span class="tooltip">PHP</span>
+            </li>
+
+          </ul>
+        </div>
+      </div>
+    </section>
+    <!-- skills section ends -->
+    <section class="projects-section-container" id="projects">
+      <div class="projects-section-div">
+        <div class="section-heading" data-aos="fade-up">
+          <h2 class="section-heading-article" tabindex="0" aria-label="My projects starts from here">
+            &#60;项目&#62;
+          </h2>
+          <p class="sectionHeadingP"></p>
+        </div>
+        <div class="project-boxes-div">
+          <div data-aos="fade-up" class="project-box-wrapper">
+            <div class="project-box project-box2" id="project-box2">
+              <div class="info-div">
+                <img src="src/png/IMG_20241112_162052.jpg" alt="pexelicon website favicon" class="faviconforProject" />
+                <article class="ProjectHeading">小圆博客系统</article>
+                <p class="ProjectDescription">
+               一个具有完整功能，前后端，以及数据库，完全独立实现的博客系统，对标wordpress，基于mdui实现，曾成功在互联网部署上线
+                </p>
+                <div class="project-buttons">
+                  <a href="https://github.com/akinokoika/Madoka-Blog-System" target="_blank" class="github-redirect"
+                    aria-label="Visit Pexelicons on GitHub">
+                    <img src="src/svg/github.svg" alt="github redirect button" />
+                  </a>
+                    <span>⭐⭐</span>
+                </div>
+              </div>
+              <div class="image-div">
+                <img src="src/webp/blog.jpg" alt="Pexelicon website preview image" />
+              </div>
+            </div>
+          </div>
+
+          <div class="project-box-wrapper" data-aos="fade-up">
+            <div class="project-box project-box5" id="project-box5">
+              <div class="info-div">
+                <img src="src/png/fern-png.png" alt="comickaze website favicon"
+                  class="faviconforProject" />
+                <article class="ProjectHeading">基于numpy实现的手写数字ANN</article>
+                <p class="ProjectDescription">
+                 不使用框架，纯手工用矩阵运算和梯度下降算法实现最基本的ANN网络用于手写数字的识别，为神经网络入门提供了第一步
+                </p>
+                <div class="project-buttons">
+                  <a href="https://github.com/akinokoika/ANN-recognize-number" target="_blank" class="github-redirect"
+                    aria-label="Visit Pexelicons on GitHub">
+                    <img src="src/svg/github.svg" alt="github redirect button" />
+                  </a>
+                    <span>⭐⭐⭐⭐⭐⭐⭐⭐</span>
+                </div>
+              </div>
+              <div class="image-div">
+                <img src="src/webp/ann.jpg" alt="comickaze website preview image" />
+              </div>
+            </div>
+          </div>
+
+          <!-- ---------------------- -->
+          <div class="project-box-wrapper" data-aos="fade-up">
+            <div class="project-box project-box2" id="project-box2">
+              <div class="info-div">
+                <img src="src/svg/aquaregia-favicon.svg" alt="Aquaregia website favicon"
+                  class="faviconforProjectAquaregia" />
+                <article class="ProjectHeading">红黑树可视化</article>
+                <p class="ProjectDescription">
+                  为更好的学习算法，独立通过前端页面实现经典算法的可视化
+                </p>
+                <div class="project-buttons">
+                  <a href="https://github.com/akinokoika/Red-black-tree-visualization" target="_blank" class="github-redirect"
+                    aria-label="Visit Aquaregia on GitHub">
+                    <img src="src/svg/github.svg" alt="github redirect button" />
+                  </a>
+                  <a href="https://akinokoika.github.io/Red-black-tree-visualization/project/Rbtree.html" target="_blank" class="cta"
+                    aria-label="Visit Aquaregia Live">
+                    <span>在线演示</span>
+                    <svg viewBox="0 0 13 10" height="10px" width="15px">
+                      <path d="M1,5 L11,5"></path>
+                      <polyline points="8 1 12 5 8 9"></polyline>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+              <div class="image-div">
+                <img src="src/webp/rb.jpg" alt="Aquaregia website preview image" />
+              </div>
+            </div>
+          </div>
+          <!-- ---------------------- -->
+          
+          
+
+          <!-- ---------------------- -->
+          
+
+          <!-- ---------------------- -->
+
+          
+          <!-- ---------------------- -->
+        </div>
+      </div>
+    </section>
+  </main>
+  <!-- main ends here -->
+
+
+  <footer id="footer">
+    <button class="fas" id="backtotopbutton" onclick="scrolltoTopfunction()">
+      <article aria-label="Back to top">&#8592;返回顶部</article>
+    </button>
+    <div class="footer-background">
+      <div class="footer-blob"></div>
+    </div>
+    <div class="footer-foreground">
+      <div class="footercontainer">
+          
+          
+    <!-- landing page ends here -->
+    <section class="about-section-container" id="about" data-aos="fade-up">
+      <div class="about-section">
+        <div class="section-heading">
+          <h2 class="section-heading-article" tabindex="0" aria-label="About me heading">
+            &#60;结尾&#62;
+          </h2>
+          <p class="sectionHeadingP"></p>
+        </div>
+
+        <div class="info-dp-section">
+          <div class="about-info">
+            <p tabindex="0">人工智能很可能会导致世界末日，但与此同时，会有伟大的公司。 —— Sam Altman</p>
+
+
+          </div>
+
+          <div class="dp" data-aos="fade-up">
+            <img src="src/png/gettyimages-1797579060-1024x1024.jpg" alt="sam" tabindex="0" aria-label="image of vinod" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- about section ends  -->
+          
+        <div class="footer-bottom">
+          <article>
+            akinokoika.site
+          </article>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- footer ends here -->
+  
+
+  <script src="main.js"></script>
+
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+
+  <script>
+    function openURL() {
+      var url = "src/pdf/Vinod's Resume.pdf";
+
+      window.open(url, "_blank");
+    }
+  </script>
+
+  <script>
+    const cursorInner = document.getElementById("cursor-inner");
+    const cursorOuter = document.getElementById("cursor-outer");
+    const links = document.querySelectorAll("a,label,button");
+
+    document.addEventListener("mousemove", function (e) {
+      const posX = e.clientX;
+      const posY = e.clientY;
+
+      cursorInner.style.left = `${posX}px`;
+      cursorInner.style.top = `${posY}px`;
+
+      // cursorOuter.style.left = `${posX}px`;
+      // cursorOuter.style.top = `${posY}px`;
+
+      cursorOuter.animate(
+        {
+          left: `${posX}px`,
+          top: `${posY}px`,
+        },
+        { duration: 500, fill: "forwards" }
+      );
+
+      links.forEach((link) => {
+        link.addEventListener("mouseenter", () => {
+          cursorInner.classList.add("hover");
+          cursorOuter.classList.add("hover");
+        });
+        link.addEventListener("mouseleave", () => {
+          cursorInner.classList.remove("hover");
+          cursorOuter.classList.remove("hover");
+        });
+      });
+    });
+  </script>
+ <script src='https://storage.ko-fi.com/cdn/scripts/overlay-widget.js'></script>
+<script>
+  
+</script>
+</body>
+
+</html>
